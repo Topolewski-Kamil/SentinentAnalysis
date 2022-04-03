@@ -1,1 +1,4 @@
-Machine learning model for sentiment analysis, based on the Naive Bayes classifier. 
+I have implemented a machine learning model for sentiment analysis. It is based on the Naive Bayes classifier. I am making use of NumPy and pandas for data manipulation, as well as, spacy and nltk for preprocessing. 
+By setting run parameters at the beginning of the program, we can change its behaviour: preprocessing methods and number of sentiment values. If three sentiment is chosen, “somewhat positive/negative” are mapped to their more general parent values.
+Next occurrences of all sentiment classes are calculated. These values are used to calculate the posterior probability for each of them. Then features dictionaries with occurrences are created and later transformed to likelihoods. All the previous data is used to perform classification and the highest likelihood class is chosen as the predicted label.
+When classification is done F1 measure is calculated, and the confusion matrix is plotted based on true labels.
